@@ -64,7 +64,7 @@ gb_results = evaluate_model(y_test, y_pred_gb, "Gradient Boosting")
 
 # Display results
 import pandas as pd
-pd.DataFrame([dt_results, rf_results, gb_results])
+print(pd.DataFrame([dt_results, rf_results, gb_results]))
 
 
 ## Hyperparameter Tuning for Gradient Boosting
@@ -84,7 +84,7 @@ y_pred_gb_best = gb_best_model.predict(X_test)
 gb_best_results = evaluate_model(y_test, y_pred_gb_best, "Gradient Boosting (Optimized)")
 
 # Display results
-pd.DataFrame([dt_results, rf_results, gb_results, gb_best_results])
+print(pd.DataFrame([dt_results, rf_results, gb_results, gb_best_results]))
 
 
 ### Best Parameters Found:
